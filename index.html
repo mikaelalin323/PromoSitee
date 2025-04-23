@@ -871,6 +871,301 @@
                 font-size: 1.2rem;
             }
         }
+
+        /* Cinematic Story Section Styling */
+        .cinematic-story {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            overflow: hidden;
+            background-color: #121212;
+        }
+
+        .film-grain-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjc1IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWx0ZXI9InVybCgjYSkiIG9wYWNpdHk9Ii4wNSIvPjwvc3ZnPg==');
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.05;
+        }
+
+        .story-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 60px;
+            text-align: center;
+            color: #B9693A;
+            position: relative;
+            z-index: 2;
+        }
+
+        .story-chapter {
+            margin-bottom: 80px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .chapter-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .chapter-content.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .chapter-image {
+            flex: 1;
+            min-width: 300px;
+            max-width: 450px;
+        }
+
+        .image-frame {
+            position: relative;
+            width: 100%;
+            padding-top: 75%; /* 4:3 Aspect Ratio */
+            border: 2px solid #B9693A;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+        }
+
+        .image-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(185, 105, 58, 0.2);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .taiwan-img {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('poster03.jpg');
+            background-position: top center;
+        }
+
+        .paris-img {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('poster03.jpg');
+            background-position: center;
+        }
+
+        .final-img {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('poster03.jpg');
+            background-position: bottom center;
+        }
+
+        .chapter-text {
+            flex: 1.5;
+        }
+
+        .chapter-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #f5f5f5;
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 2px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .chapter-icon {
+            margin-left: 15px;
+            color: #B9693A;
+            font-size: 1.5rem;
+        }
+
+        .chapter-description {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #e0e0e0;
+        }
+
+        .character-quote {
+            position: relative;
+            padding: 20px 30px;
+            margin: 30px 0;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.3rem;
+            line-height: 1.6;
+            border-left: 3px solid #B9693A;
+            background-color: rgba(185, 105, 58, 0.1);
+        }
+
+        .mei-quote {
+            border-left-color: #B9693A;
+        }
+
+        .ethan-quote {
+            border-left-color: #B9693A;
+        }
+
+        .quote-attribution {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            font-style: normal;
+            text-align: right;
+            color: #B9693A;
+        }
+
+        .dialogue-exchange {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: rgba(185, 105, 58, 0.1);
+            border-radius: 10px;
+        }
+
+        .dialogue {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .mei-dialogue {
+            color: #e0e0e0;
+            text-align: left;
+        }
+
+        .ethan-dialogue {
+            color: #B9693A;
+            text-align: right;
+        }
+
+        .interactive-journey {
+            margin: 80px 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .journey-title {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 3px;
+            color: #B9693A;
+        }
+
+        .journey-map.enhanced {
+            position: relative;
+            height: 250px;
+            background: rgba(185, 105, 58, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .journey-line {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            right: 5%;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #B9693A, transparent);
+            z-index: 1;
+        }
+
+        .map-point.animated {
+            width: 15px;
+            height: 15px;
+            background: #B9693A;
+            box-shadow: 0 0 10px rgba(185, 105, 58, 0.5);
+            z-index: 3;
+        }
+
+        .point-pulse {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 30px;
+            height: 30px;
+            background: rgba(185, 105, 58, 0.3);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: translate(-50%, -50%) scale(0.5); opacity: 1; }
+            100% { transform: translate(-50%, -50%) scale(2); opacity: 0; }
+        }
+
+        .critic-quotes {
+            margin: 60px 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .quote-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .film-quote {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            padding: 30px;
+            background-color: rgba(185, 105, 58, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .film-quote p {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #f5f5f5;
+            margin-bottom: 15px;
+        }
+
+        .quote-source {
+            font-size: 0.9rem;
+            color: #B9693A;
+        }
+
+        @media (max-width: 992px) {
+            .chapter-content, .chapter-content.reverse {
+                flex-direction: column;
+            }
+
+            .chapter-image {
+                width: 100%;
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .story-title {
+                font-size: 2.5rem;
+            }
+
+            .chapter-title {
+                font-size: 1.5rem;
+            }
+
+            .character-quote {
+                font-size: 1.1rem;
+            }
+
+            .dialogue {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -941,7 +1236,7 @@
                 <div class="slide">
                     <div class="video-container">
                         <video controls>
-                            <source src="videos/highlight1.mp4" type="video/mp4">
+                            <source src="highlight1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -955,7 +1250,7 @@
                 <div class="slide">
                     <div class="video-container">
                         <video controls>
-                            <source src="videos/highlight2.mp4" type="video/mp4">
+                            <source src="highlight2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -969,7 +1264,7 @@
                 <div class="slide">
                     <div class="video-container">
                         <video controls>
-                            <source src="videos/highlight3.mp4" type="video/mp4">
+                            <source src="highlight3.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -983,7 +1278,7 @@
                 <div class="slide">
                     <div class="video-container">
                         <video controls>
-                            <source src="videos/highlight4.mp4" type="video/mp4">
+                            <source src="highlight4.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -997,7 +1292,7 @@
                 <div class="slide">
                     <div class="video-container">
                         <video controls>
-                            <source src="videos/highlight5.mp4" type="video/mp4">
+                            <source src="highlight5.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -1025,82 +1320,121 @@
         </div>
     </section>
 
-    <section id="story" class="timeline">
-        <h2>The Story</h2>
-
-        <!-- Condensed Story Overview -->
-        <div class="container left">
-            <div class="content act1-pattern">
-                <div class="act">
-                    <h3>A Journey Across Continents <i class="fas fa-globe act-icon"></i></h3>
-                    <p>Mei, a determined runner from Taiwan, quits her desk job to travel the world on foot. She documents her experiences in a blog called "Run the World," gaining a small but dedicated following. Her path crosses with Ethan, a travel journalist, when he accidentally spills coffee on her map in Paris.</p>
-                    <p>As Mei continues her journey through Italy, Morocco, and Japan, Ethan keeps appearing in her life through a series of coincidences. Their connection deepens with each encounter, but when Mei discovers Ethan might be writing an article about her, she feels betrayed and distances herself.</p>
-                    <p>Their final reunion happens in rural China, where Mei realizes that sometimes the most important things in life are experienced standing still. The film ends with Mei understanding that running isn't just about moving forward—it's also about knowing when to pause and cherish what matters.</p>
+    <section id="story" class="cinematic-story">
+        <div class="film-grain-overlay"></div>
+        <h2 class="story-title">The Story</h2>
+        
+        <div class="story-chapter chapter1">
+            <div class="chapter-content">
+                <div class="chapter-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder taiwan-img"></div>
+                    </div>
+                </div>
+                <div class="chapter-text">
+                    <h3 class="chapter-title">CHAPTER I: THE DEPARTURE <i class="fas fa-running chapter-icon"></i></h3>
+                    <p class="chapter-description">The rhythmic <em>thud</em> of running shoes against pavement was the only sound Mei had trusted for years. In the pre-dawn light of Taipei, she makes a decision that will change everything—trading security for the unknown.</p>
                     
-                    <div class="quote">
-                        "Some people understand the world through books. I understand it through my feet."
+                    <div class="character-quote mei-quote">
+                        <p>"I run because standing still terrifies me more than any distance."</p>
+                        <span class="quote-attribution">— Mei</span>
                     </div>
                     
-                    <div class="locations">
-                        <span class="location">
-                            <i class="fas fa-mountain"></i>Taiwan
-                            <div class="location-popup">
-                                <h4>Taiwan</h4>
-                                <p>Where Mei's journey begins and ultimately ends.</p>
-                            </div>
-                        </span>
-                        <span class="location">
-                            <i class="fas fa-landmark"></i>Paris
-                            <div class="location-popup">
-                                <h4>Paris</h4>
-                                <p>The city where Mei and Ethan first meet.</p>
-                            </div>
-                        </span>
-                        <span class="location">
-                            <i class="fas fa-pizza-slice"></i>Italy
-                            <div class="location-popup">
-                                <h4>Italy</h4>
-                                <p>They unexpectedly meet again at a marathon.</p>
-                            </div>
-                        </span>
-                        <span class="location">
-                            <i class="fas fa-mosque"></i>Morocco
-                            <div class="location-popup">
-                                <h4>Morocco</h4>
-                                <p>A miscommunication leaves them in the same hostel.</p>
-                            </div>
-                        </span>
-                        <span class="location">
-                            <i class="fas fa-torii-gate"></i>Japan
-                            <div class="location-popup">
-                                <h4>Japan</h4>
-                                <p>They join the same running club in Tokyo.</p>
-                            </div>
-                        </span>
-                    </div>
+                    <p class="chapter-description">With nothing but a backpack and her running shoes, Mei begins documenting her journey in a blog called "Run the World." Each post becomes a digital footprint, marking her path across continents.</p>
                 </div>
             </div>
         </div>
-
-        <!-- Journey Map -->
-        <div class="journey-map">
-            <div class="map-point taiwan"></div>
-            <div class="map-label">Taiwan</div>
-            
-            <div class="map-point paris"></div>
-            <div class="map-label">Paris</div>
-            
-            <div class="map-point italy"></div>
-            <div class="map-label">Italy</div>
-            
-            <div class="map-point morocco"></div>
-            <div class="map-label">Morocco</div>
-            
-            <div class="map-point japan"></div>
-            <div class="map-label">Japan</div>
-            
-            <div class="map-point china"></div>
-            <div class="map-label">Taiwan</div>
+        
+        <div class="story-chapter chapter2">
+            <div class="chapter-content reverse">
+                <div class="chapter-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder paris-img"></div>
+                    </div>
+                </div>
+                <div class="chapter-text">
+                    <h3 class="chapter-title">CHAPTER II: COLLISION COURSE <i class="fas fa-map-marked chapter-icon"></i></h3>
+                    <p class="chapter-description">Paris. A crowded café. A spilled coffee. A ruined map. Their first meeting is a disaster—or perhaps, the beginning of something neither of them saw coming.</p>
+                    
+                    <div class="dialogue-exchange">
+                        <p class="dialogue mei-dialogue">"You've destroyed my route."</p>
+                        <p class="dialogue ethan-dialogue">"Maybe some routes are meant to be redrawn."</p>
+                    </div>
+                    
+                    <p class="chapter-description">As Mei continues through Europe, Ethan keeps appearing in her life—a marathon in Italy, a hostel mix-up in Morocco, a midnight run in Tokyo. Coincidence becomes connection, until a betrayal threatens to tear them apart.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="story-chapter chapter3">
+            <div class="chapter-content">
+                <div class="chapter-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder final-img"></div>
+                    </div>
+                </div>
+                <div class="chapter-text">
+                    <h3 class="chapter-title">CHAPTER III: STANDING STILL <i class="fas fa-heart chapter-icon"></i></h3>
+                    <p class="chapter-description">In the misty mountains of rural China, Mei finally stops running. Under a canopy of ancient trees, she realizes that some journeys aren't measured in miles, but in moments.</p>
+                    
+                    <div class="character-quote ethan-quote">
+                        <p>"You've been searching the world for something that was inside you all along."</p>
+                        <span class="quote-attribution">— Ethan</span>
+                    </div>
+                    
+                    <p class="chapter-description">The film closes with Mei and Ethan running side by side—not away from something, but toward a shared horizon. Two heartbeats finding their rhythm together.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="interactive-journey">
+            <h3 class="journey-title">THEIR JOURNEY</h3>
+            <div class="journey-map enhanced">
+                <div class="map-point taiwan animated">
+                    <div class="point-pulse"></div>
+                </div>
+                <div class="map-label">Taiwan</div>
+                
+                <div class="map-point paris animated">
+                    <div class="point-pulse"></div>
+                </div>
+                <div class="map-label">Paris</div>
+                
+                <div class="map-point italy animated">
+                    <div class="point-pulse"></div>
+                </div>
+                <div class="map-label">Italy</div>
+                
+                <div class="map-point morocco animated">
+                    <div class="point-pulse"></div>
+                </div>
+                <div class="map-label">Morocco</div>
+                
+                <div class="map-point japan animated">
+                    <div class="point-pulse"></div>
+                </div>
+                <div class="map-label">Japan</div>
+                
+                <div class="map-point china animated">
+                    <div class="point-pulse"></div>
+                </div>
+                <div class="map-label">Taiwan</div>
+                
+                <div class="journey-line"></div>
+            </div>
+        </div>
+        
+        <div class="critic-quotes">
+            <div class="quote-container">
+                <div class="film-quote">
+                    <p>"A breathtaking journey that reminds us why we run—and why we stop."</p>
+                    <span class="quote-source">— Film Quarterly</span>
+                </div>
+                <div class="film-quote">
+                    <p>"Two souls finding each other across continents. Pure cinematic poetry."</p>
+                    <span class="quote-source">— The Movie Critic</span>
+                </div>
+            </div>
         </div>
     </section>
 
